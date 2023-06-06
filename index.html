@@ -10,7 +10,11 @@
   </head>
   <body>
     <div class="page">
-      <form action="">
+      <form
+        id="mequiForm"
+        action="https://formsubmit.co/fabio.ruhe@icloud.com"
+        method="POST"
+      >
         <header>
           <img src="./mcLogo.png" alt="" />
         </header>
@@ -19,33 +23,49 @@
             <h1>Ouvidoria</h1>
             <h2>Canal de comunicação direta com Franquia Bornelli</h2>
           </legend>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/thankyou.html"
+          />
+          <input type="hidden" name="_cc" value="fabioruhe@gmail.com" />
           <div class="input-wrapper">
-            <label for="name">Nome</label>
-            <input placeholder="Nome completo" type="text" />
+            <label for="name">Nome <span>Não obrigatório</span> </label>
+            <input name="name" placeholder="Nome completo" type="text" />
           </div>
           <div class="input-wrapper">
-            <label for="email">E-mail</label>
-            <input placeholder="exemplo@exemplo.com.br" type="text" />
+            <label for="email">E-mail <span>Não obrigatório</span> </label>
+            <input
+              name="email"
+              placeholder="exemplo@exemplo.com.br"
+              type="text"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="phone">Telefone <span>Não obrigatório</span> </label>
+            <input name="phone" type="tel" />
           </div>
           <div class="input-wrapper">
             <label for="text">Deixe aqui seu comentário</label>
-            <textarea name="text" id="" cols="30" rows="10"></textarea>
+            <textarea name="text" id="" cols="30" rows="10" required></textarea>
           </div>
           <div class="input-wrapper">
             <label for="store">Loja</label>
-            <select name="store" id="">
+            <select name="store" id="" required>
               <option value="AME">AME</option>
               <option value="">AM2</option>
               <option value="">CSC</option>
               <option value="">CSD</option>
               <option value="">HOD</option>
               <option value="">HOR</option>
+              <option value="">NOD</option>
+              <option value="">SHS</option>
               <option value="">TIV</option>
             </select>
           </div>
           <div class="input-wrapper">
             <label for="shift">Turno</label>
-            <select name="shift" id="shiftSelect">
+            <select name="shift" id="shiftSelect" required>
               <option value="manha">Manhã</option>
               <option value="tarde">Tarde</option>
               <option value="noite">Noite</option>
@@ -55,7 +75,8 @@
         </fieldset>
       </form>
       <footer>
-        <input type="submit" value="Enviar" />
+        <input name="submit" type="submit" value="Enviar" form="mequiForm" />
+        <a href="thankyou.html">TestePaginaObrigado</a>
       </footer>
     </div>
   </body>
