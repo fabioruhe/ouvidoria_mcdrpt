@@ -12,7 +12,7 @@
     <div class="page">
       <form
         id="mequiForm"
-        action="https://formsubmit.co/fabio.ruhe@icloud.com"
+        action="https://formsubmit.co/franqueado@mcdrpt.com.br"
         method="POST"
       >
         <header>
@@ -26,10 +26,14 @@
           <input
             type="hidden"
             name="_next"
-            value="http://127.0.0.1:5500/thankyou.html"
+            value="https://ouvidoriaonline.mcdrpt.com.br/thankyou.html"
           />
-          <input type="hidden" name="_subject" value="Nova mensagem!" />
-          <input type="hidden" name="_cc" value="fabioruhe@gmail.com" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nova mensagem da Ouvidoria!"
+          />
+          <input type="hidden" name="_cc" value="eder.bornelli@mcdrpt.com.br" />
           <div class="input-wrapper">
             <label for="name">Nome <span>Não obrigatório</span> </label>
             <input name="name" placeholder="Nome completo" type="text" />
@@ -37,9 +41,9 @@
           <div class="input-wrapper">
             <label for="email">E-mail <span>Não obrigatório</span> </label>
             <input
+              type="email"
               name="email"
-              placeholder="exemplo@exemplo.com.br"
-              type="text"
+              placeholder="exemplo@exemplo.com"
             />
           </div>
           <div class="input-wrapper">
@@ -77,7 +81,6 @@
       </form>
       <footer>
         <input name="submit" type="submit" value="Enviar" form="mequiForm" />
-        <a href="thankyou.html">TestePaginaObrigado</a>
       </footer>
     </div>
   </body>

@@ -139,3 +139,26 @@ span {
   font-size: 1rem;
   color: rgb(108, 113, 124);
 }
+
+.newMessage {
+  width: 80%;
+  height: 5.6rem;
+  display: flex;
+  justify-content: center;
+  background-color: #ffc700;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  color: #4e3904;
+  cursor: pointer;
+  transition: 300ms linear;
+  align-items: center;
+  text-decoration: none;
+}
+.newMessage:hover {
+  background-color: #c79000;
+}
